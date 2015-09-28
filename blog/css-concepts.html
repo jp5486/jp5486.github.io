@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Concepts</title>
+</head>
+
+<body>
+  <header>
+    <A NAME="top">
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="mailto:jp5486@gmail.com">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>CSS Concepts</h1>
+    <span>
+      <h4>September 2015</h4>
+      <h4 class="tag"><a href="#"></a></h4>
+      <h4 class="tag"><a href="#"></a></h4>
+    </span>
+
+    <article>
+      <h4>What is the difference between Margin, Border, and Padding?</h4>
+
+      <p>Margin clears an area around the border.</p>
+      <p>Border is a border(for lack of a better term. Its pretty self explanatory) that goes around the content and padding.</p>
+      <p>Padding clears an area around the element.</p>
+      <p>Look at the imagine below for the box model.<br>Content central to everything and surrounded by the blank padding space. The border creates a designed box around both the content and padding. Finally, the margin is the space outside the content, padding and margin. </p>
+      <img src="../imgs/boxmodel.png">
+
+      <h4>What are the best practices associated with using classes vs. ids?</h4>
+      <p>Best practices call for heavy use of Classes and barely any use of IDs. The reasoning behind this is there will not be many situations where you need to style a specific element and it is a waste of time and resources to code an element only in one place. You can take it to an extreme by looking at atomic design patterns where a single class name is set for every single style modification set. Your code is reusable and pretty much unbreakable with no syntax errors.</p>
+
+      <h4>What are the differences between relative, absolute, fixed, and static positioning?</h4>
+      <p>Absolute is only affected relative to the next parent element with relative or absolute positioning.<br>Fixed positioning has the element positioned relative to the browser window.<br>Static is the default natural positioning. It is used to forcefully remove some unintended positioning effects.<br>Relative is confusing and means relative to itself. It is similar to static positioning  as it starts off not affected by other elements and is then moved accordingly from its static position.</p>
+
+      <h4>What does it mean to display inline vs using inline block?</h4>
+      <p>When you display inline you will use the left and right margin &amp; padding and allow other elects to be placed on the same horizontal plane.<br>Display inline block is similar to inline where you can still place elements on the same horizontal plane however it will use the top + bottom margins  &amp; padding along with height and width properties. </p>
+        <footer>
+          <address>
+            By <a href="mailto:jp5486@gmail.com">Jeremy Powell</a>
+          </address>
+        <p>Copyright Jeremy Powell 2015</p>
+        </footer>
+
+    </article>
+
+    <a href="#" id="back button" alt="Previous"><img src="#"></a>
+    <a href="#" id="next button"alt="Next"><img src="#"></a>
+  </main>
+
+  <footer>
+    <ul>
+        <li><a href="https://github.com/JP5486/JP5486.github.io/blog/index.html"><img src="#github img"></a></li>
+        <li><a href="#github link"><img src="#githubimg"></a></li>
+        <li><a href="https://www.facebook.com/jp5486"><img src="#Facebookbutton"></a></li>
+        <li><a href="http://twitter.com/jp5486"><img src="#twitterimg"></a></li>
+        <li><a href="mailto:jp5486@gmail.com"><img src="#letterimg"></a></li>
+      </ul>
+      <a href="#top">Top</a>
+  </footer>
+</body>
+</html>
+
