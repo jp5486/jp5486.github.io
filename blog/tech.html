@@ -28,15 +28,24 @@
     </span>
 
     <article>
-      <p>Regular expressions are a very powerful tool that can be used across languages to help search out patterns in your code. <br>Below is a summary of how to reference different search patterns:</p>
+      <p>Regular expressions are a very powerful tool that can be used across languages to help search out patterns in your code. <br>Although the subject can only be mastered with practice, here is a short summary of how to reference different search patterns with a cheat sheet image at the bottom. Enjoy</p>
+      <p>The most logical start is by looking for literal orders of string characters and digits<br>abc or 123 will look for instances of the 3 letters or numbers in that specific order.</p>
+      <p>\d searches for any digit <br>\D any Non-digit character like punctuation</p>
+      <p>\w searches for any alphanumeric character <br>\W any Non-alphanumberic character</p>
       <p>The . character is a general joker/wildcard</p>
-      <p>Surrounding letters with brackets will look for those sepecfic letters <br>[fgh] would look for any of the letters: 'f', 'g', 'h'.</p>
-      <p>While using a hat ^ inside the brackets will exclude letters from a search <br>[^ijk] would skip words with the letters 'i' 'j' or 'k' from your search.</p>
-      <p>Ranges can also be set within brackets: <br>[4-9] will search for the digits 4 through 9<br>[^a-g] will search for all letters except a through g</p>
+      <p>Surrounding letters with brackets will look for those sepecfic letters <br>[fgh] would look for any of the letters: 'f', 'g', 'h' in the pattern.</p>
+      <p>Using a hat ^ INSIDE the brackets will exclude letters from a search <br>[^ijk] would skip words with the letters 'i' 'j' or 'k' from your search.</p>
+      <p>Ranges can also be set within brackets: <br>[4-9] will search a character for the digits 4 through 9<br>[^a-g] will search for all letters except a through g</p>
       <p>Note that letters are case sensitive<br>[A-C] will only get the words containing Upper Case letters 'A','B','C'</p>
-      <p>Searching for multiple occurances of a letter is fairly simple<br>\x\x\x or x{3} will search for 3 instances of the lower case letter 'x' connected <br>But there are other ways as well:
-      <p>A * character represents 0 or more of a charater while<br>the + character represents 1 or more and makes more sense to use. <br>B+ looks for 1 or more Upper Case letter B</p>
-      <p></p>
+      <p>Searching for multiple occurances of a letter is fairly simple<br>\x\x\x or x{3} will search for 3 instances of the lower case letter 'x' connected <br>Also you can set a range inside the curly braces. x{3,6} will look for between 3 and 6 occurances of the letter x<br>But there are other ways as well:
+      <p>A * character represents 0 or more of a charater while<br>The + character represents 1 or more and makes more sense to use. <br>B+ looks for 1 or more Upper Case letter B</p>
+      <p>The ? character is a little trying and is used to signal an optional character search. It is similar to using *. The results will show with or without the preceding character to the ? <br>smiles? - the s is optional and the search will return smile and smiles</p>
+      <p>When needing to reference whitespace use "\s".</p>
+      <p>Using a hat ^ without brackets at the beginning and a dollar sign $ at the end will search for an exact match for the contents. I would compare this to using quotes on a search engine. <br>^Clear Example$ would literally search for the exact string inside the special characters in that casing instead of returning partial matches.</p>
+      <p>Parentheses can be used to check for subpatterns such as file names. <br>^(screenshot.*)\.png$ searches for files starting with the wordscreenshot but may have a longer name and are also appended with a .png file extension. <br>The contents in the parentheses can then be used for futher data processing and You can also nest parentheses within each other for extra data processing.</p>
+      <p>Lastly we can add a pipe | inside of a parentheses to signify the or conditional statement which can add to your search results.</p>
+      <p>For some practical examples I reccomend <a href="http://regexone.com/">regexone</a>.</p>
+      <img src="..\imgs\RegEx_Cheat_Sheet.png">
       <footer>
         <p>Copyright Jeremy Powell 2015</p>
       </footer>
