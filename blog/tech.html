@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>RegEx</title>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+
+<body>
+  <header>
+    <A NAME="top">
+      <nav class="nav">
+        <ul class=>
+          <li><a href="http://jp5486.github.io">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="index.html">Blog</a></li>
+          <li><a href="../portfolio.html">Portfolio</a></li>
+          <li><a href="#resume">Resume</a></li>
+        </ul>
+      </nav>
+  </header>
+
+  <main class="h-line">
+    <h1>Regular Expressions</h1>
+    <span>
+      <h4>Nov 1, 2015</h4>
+    </span>
+
+    <article>
+      <p>Regular expressions are a very powerful tool that can be used across languages to help search out patterns in your code. <br>Below is a summary of how to reference different search patterns:</p>
+      <p>The . character is a general joker/wildcard</p>
+      <p>Surrounding letters with brackets will look for those sepecfic letters <br>[fgh] would look for any of the letters: 'f', 'g', 'h'.</p>
+      <p>While using a hat ^ inside the brackets will exclude letters from a search <br>[^ijk] would skip words with the letters 'i' 'j' or 'k' from your search.</p>
+      <p>Ranges can also be set within brackets: <br>[4-9] will search for the digits 4 through 9<br>[^a-g] will search for all letters except a through g</p>
+      <p>Note that letters are case sensitive<br>[A-C] will only get the words containing Upper Case letters 'A','B','C'</p>
+      <p>Searching for multiple occurances of a letter is fairly simple<br>\x\x\x or x{3} will search for 3 instances of the lower case letter 'x' connected <br>But there are other ways as well:
+      <p>A * character represents 0 or more of a charater while<br>the + character represents 1 or more and makes more sense to use. <br>B+ looks for 1 or more Upper Case letter B</p>
+      <p></p>
+      <footer>
+        <p>Copyright Jeremy Powell 2015</p>
+      </footer>
+    </article>
+
+  </main>
+
+  <footer class= "nav h-line">
+    <ul class="">
+      <li class=""><a href="https://github.com/jp5486"><img src="../imgs/GitHub-Mark-32px.png"></a></li>
+      <li class=""><a href="http://www.facebook.com/jp5486"><img src="../imgs/facebook-32.png"></a></li>
+      <li class=""><a href="http://twitter.com/jp5486"><img src="../imgs/twitter-32.png"></a></li>
+      <li class=""><a href="mailto:jp5486@gmail.com"><img src="../imgs/email-32.png"></a></li>
+    </ul>
+  </footer>
+</body>
+</html>
